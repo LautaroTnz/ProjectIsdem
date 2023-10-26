@@ -41,7 +41,7 @@ footer i.fab {
 }
 
 footer i.fab:hover {
-    color: #A67F44; /* Cambia el color del icono cuando se pasa el mouse sobre él */
+    color: #A67F44;
 }
 
 @media (max-width: 768px) {
