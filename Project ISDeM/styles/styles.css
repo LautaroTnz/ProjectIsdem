@@ -5,124 +5,47 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;;
-    padding-left: 5%;
-    padding-right: 5%;
+/* ESTILOS NAVBAR */
+.navbar{
     background-color: #8C2426;
 }
 
-.logo{
-    width: 80px;
-    height: 80px;
-}
-
-ul li{
-    display: inline-block;
-    padding: 30px 20px;
-}
-
-.barraNav{
-    color: #F5F5F5FA;
+.navbar-nav .nav-link {
     text-decoration: none;
     font-size: 22px;
+    margin-right: 30px;
+    color: #F5F5F5FA;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    border-bottom: 3px solid #AE843B;
+.navbar-nav .nav-link:hover {
+    color: #A67F44;
 }
 
-
-.slider-box{
-    width: 1280px;
-    height: auto;
-    margin: 10px auto 0;
-    overflow: hidden;
+/*ESTILO LOGO NAVBAR*/
+.navbar-brand img.logo {
+    max-width: 90px;
+    max-height: 90px;
 }
 
-.slider-box .imagenesC{
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 15s infinite alternate ease-in-out;
-}
-
-.slider-box .IMG1{
-    width: 100%;
-    list-style: none;
-    position: relative;
-}
-
-.slider-box img{
-    width: 100%;
-}
-
-.tarjetas{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.seccion-videos {
-    margin: 50px auto;
-    max-width: 1280px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.videos-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.videos-row iframe {
-    width: 400px; 
-    height: 315px;
-    border: none;
-    margin-right: 10px;
-}
-
-.videos-row iframe:last-child {
-    margin-right: 0; 
-}
-
+/* ESTILO FOOTER */
 footer {
     text-align: left;
     background-color: #8C2426;
     color: #F5F5F5FA;
 }
 
-.titulo-seccion{
-    margin-left: 10px;
-    padding: 10px 0;
+footer i.fab {
+    font-size: 20px;
+    transition: color 0.3s;
 }
 
-.info{
-    margin-left: 10px;
+footer i.fab:hover {
+    color: #A67F44; /* Cambia el color del icono cuando se pasa el mouse sobre él */
 }
 
-.copy{
-    text-align: center;
-    padding: 15px;
-}
-
-@keyframes slide {
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
-
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    70% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    100% {margin-left: -300%;}
+@media (max-width: 768px) {
+    footer {
+        font-size: 13px;
+    }
 }

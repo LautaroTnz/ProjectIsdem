@@ -3,69 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="../styles/styles.css">
+    <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- FontAwesome icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Logo -->
     <link rel="icon" href="../imagenes/logoIsdem.svg" type="image/x-icon">
     <title>Instituto Superior del Milagro</title>
-
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 </head>
 <body>
     
-    <header class="header1">
-        <nav class="nav1">
-            <a href="index.html"title="Logo">
-                <img src="../imagenes/logoIsdem1.png" alt="logo" class="logo" width="180" height="180"  viewBox="0 0 180 180" fill="none">
-            </a>
-                <ul>
-                    <li><a class="barraNav" href="institucional.html"title="Institucional"><i class="fa-solid fa-school"></i> Institucional</a></li>
-                    <li><a class="barraNav" href="carreras.html" title="Carreras"><i class="fa-solid fa-graduation-cap"></i> Carreras</a></li>
-                    <li><a class="barraNav" href="cursado.html" title="Modalidad_Cursado"><i class="fa-solid fa-book-open"></i> Modalidad Cursado</a></li>
-                    <li><a class="barraNav" href="sedes.html" title="Sedes"><i class="fa-solid fa-chalkboard-user"></i> Sedes</a></li>
-                    <li><a class="barraNav" href="contacto.html" title="Contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
-                </ul>
-        </nav>
-    </header>
+        <!-- BARRA DE NAVEGACION -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="https://institutodelmilagro.com/wp-content/uploads/2023/10/logo23-01.svg" alt="logo" class="logo img-fluid" style="max-width: 90px; max-height: 90px;">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="institucional.html"><i class="fa-solid fa-school"></i> Institucional</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="carreras.html"><i class="fa-solid fa-graduation-cap"></i> Carreras</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="cursado.html"><i class="fa-solid fa-book-open"></i> Modalidad Cursado</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sedes.html"><i class="fa-solid fa-chalkboard-user"></i> Sedes</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link" href="contacto.html"><i class="fa-solid fa-envelope"></i> Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <div class="slider-box">
-        <ul class="imagenesC">
-            <li  class="IMG1">
-                <img src="../imagenes/slayer_primaria_500.jpg" alt="Educacion especial">
-            </li>
-
-            <li class="IMG1">
-                <img src="../imagenes/slayer_especial_500.jpg" alt="Educacion especial">
-            </li class="IMG1">
-
-            <li class="IMG1">
-                <img src="../imagenes/slayer_psico_500.jpg" alt="Educacion especial">
-            </li>
-
-            <li class="IMG1">
-                <img src="../imagenes/slayer_ingles_500.jpg" alt="Educacion especial">
-            </li>
-        </ul>
-    </div>
-
-    <section class="videos-section">
-        <div class="videos-row">
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/GMMkzoxndIY" title="Psicopedagogía" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/bgsyacLoEX8" title="Profesorado de Educación Primaria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/HAdt-MVpeBI" title="Oferta Analista 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <main>
+        <!-- CARRUSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide mt-5 mb-5" style="max-width: 1200px; margin-left: auto; margin-right: auto;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../imagenes/slayer_especial_500.jpg" class="d-block w-100" alt="Flyer educacion especial">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/slayer_ingles_500.jpg" class="d-block w-100" alt="Flyer profesorado ingles">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/slayer_primaria_500.jpg" class="d-block w-100" alt="Flyer profesorado primaria">
+                </div>
+                <div class="carousel-item">
+                    <img src="../imagenes/slayer_psico_500.jpg" class="d-block w-100" alt="Flyer psicopedagogia">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <div class="videos-row">
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/2TMhx0XNL2Y" title="Profesorado de Ingles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/bJ_kxk3GZWg" title="Profesorado de Educación Especial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <iframe width="340" height="191" src="https://www.youtube.com/embed/IrQvEC-ZrNM" title="Ofertas Educativas 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </section>
 
-    <footer>
-        <div class="contenedor">
-            <h3 class="titulo-seccion">INSTITUTO SUPERIOR DEL MILAGRO</h3>
-            <p class="info">Alvarado Nº 951 - Salta Capital - Tel.: 387 4311519 - 387 4312643</p>
-            <p class="copy">© Todos los derechos reservados</p>
+
+        <!-- SECCIÓN DE VIDEOS -->
+        <section class="container mt-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/GMMkzoxndIY" title="Psicopedagogía" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bgsyacLoEX8" title="Profesorado de Educación Primaria" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/HAdt-MVpeBI" title="Oferta Analista 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/2TMhx0XNL2Y" title="Profesorado de Ingles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bJ_kxk3GZWg" title="Profesorado de Educación Especial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/IrQvEC-ZrNM" title="Ofertas Educativas 2023" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>    
+
+
+    <!-- FOOTER -->
+    <footer class="text-left py-3">
+        <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
+            <div class="mb-3 mb-lg-0">
+                <h3 class="titulo-seccion">INSTITUTO SUPERIOR DEL MILAGRO</h3>
+                <p class="info">Alvarado Nº 951 - Salta Capital - Tel.: 387 4311519 - 387 4312643</p>
+                <p class="copy">© Todos los derechos reservados</p>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/InstitutoSuperiorMilagro" target="_BLANK" class="text-white me-4"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/institutosuperiormilagro/" target="_BLANK" class="text-white me-4"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@institutomilagro8579" target="_BLANK" class="text-white"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
     </footer>
 
