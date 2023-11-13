@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +11,11 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
         <!-- Logo -->
         <link rel="icon" href="../imagenes/logoIsdem.svg" type="image/x-icon">
-        <title>Institucional</title>
+        <title>Carreras</title>
         <!-- Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     </head>
-</head>
 <body>
     
     <header>
@@ -41,8 +39,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="carreras.html"><i class="fa-solid fa-graduation-cap"></i> Carreras</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="cursado.html"><i class="fa-solid fa-book-open"></i> Modalidad Cursado</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="modalidadCursadoDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa-solid fa-pen"></i>
+                                Modalidad Cursado
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="modalidadCursadoDropdown">
+                                <a class="dropdown-item" href="presencial.html">Presencial</a>
+                                <a class="dropdown-item" href="distancia.html">A Distancia (Solo para T.A.S) </a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="sedes.html"><i class="fa-solid fa-chalkboard-user"></i> Sedes</a>
@@ -56,55 +61,52 @@
             </div>
         </nav>
     </header>
-    
 
-    <main>
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Misión y Fines</h2>
-                    <p>
-                        El Instituto Superior Del Milagro Nº 8207 es una institución de Educación Superior, que responde a la modalidad Pública de Gestión Privada, dependiendo de la Dirección General de Enseñanza Privada de la Provincia de Salta Capital.
-                    </p>
-
-                    <p>
-                        La Educación Superior tiene por finalidad proporcionar formación científica, profesional, humanística y técnica en el más alto nivel, contribuir a la preservación de la cultura nacional, promover la generación y desarrollo del conocimiento en todas sus formas, y desarrollar las actitudes y valores que requiere la formación de personas responsables, con conciencia ética y solidaria, reflexivas, críticas, capaces de mejorar la calidad de vida, consolidar el respeto al medio ambiente, a las instituciones de la República y a la vigencia del orden democrático.
-                    </p>
-
-                    <p>
-                        Habiendo cumplido 30 años de vida, el Instituto continua sosteniendo como eje el espíritu que le dio origen, asumiendo una filosofía educativa institucional humanística, centrada en la promoción integral persona humana.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <img src="../imagenes/Research paper-bro.png" alt="Descripción de la imagen" class="img-fluid" style="width: 590px; height: 500px;">
-                </div>
-            </div>
+    <main class="container my-5">
+        <div class="text-center">
+            <h2>NUESTRAS CARRERAS</h2>
         </div>
 
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3>Objetivos Institucionales</h3>
-                    <p>
-                        <b>El Instituto persigue los siguientes objetivos:</b>
-                    </p>
-
-                    <p>
-                        a) Formar docentes, profesionales y técnicos, que se caractericen por la solidez de su formación científica y profesional, y por su compromiso con la sociedad de la que forman parte, con conciencia ética, solidaria, reflexiva y crítica; con el fin de que sean capaces de aportar al mejoramiento de la calidad de vida, consolidar el respeto al medio ambiente, a las instituciones de la República y a la vigencia del orden democrático.
-                    </p>
-
-                    <p>
-                        b) Desarrollar propuestas de formación integral que permitan a los estudiantes su plena realización personal en sus dimensiones cultural, social, ética y religiosa. Mediante la formación integral y el compromiso con la sociedad,
-                    </p>
-                    <br>
+        <!-- Banners de carreras -->
+        <div class="row my-5">
+            <div class="col-md-6">
+                <div class="mb-3 banner-container">
+                    <a href="#">
+                        <img src="../imagenes/flayer c1.png" alt="Banner 1" class="img-fluid banner-img" style="width: 722px; height: 1024px;">
+                    </a>
                 </div>
-                <div class="col-md-6">
-                    <img src="../imagenes/Goal-amico.png" alt="Descripción de la imagen" class="img-fluid" style="width: 550px; height: 450px;">
+                <div class="mb-3 banner-container">
+                    <a href="#">
+                        <img src="../imagenes/flayer c3.jpg" alt="Banner 2" class="img-fluid banner-img" style="width: 722px; height: 1024px;">
+                    </a>
+                </div>
+                <div class="mb-3 banner-container">
+                    <a href="#">
+                        <img src="../imagenes/flayer c5.png" alt="Banner 3" class="img-fluid banner-img" style="width: 722px; height: 1024px;">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="mb-3 banner-container">
+                    <a href="#">
+                        <img src="../imagenes/flayer c2.png" alt="Banner 4" class="img-fluid banner-img" style="width: 722px; height: 1024px;">
+                    </a>
+                </div>
+                <div class="mb-3 banner-container">
+                    <a href="#">
+                        <img src="../imagenes/flyer c4.jpg" alt="Banner 5" class="img-fluid banner-img" style="width: 722px; height: 1024px;">
+                    </a>
+                </div>
+                <div class="mb-3 banner-container">
+                    <a href="#">
+                        <img src="../imagenes/flayer c6.jpg" alt="Banner 6" class="img-fluid banner-img" style="width: 722px; height: 1024px;">
+                    </a>
                 </div>
             </div>
         </div>
     </main>
-
+        
     <footer class="text-left py-3">
         <div class="container d-flex flex-column flex-lg-row justify-content-between align-items-center">
             <div class="mb-3 mb-lg-0">

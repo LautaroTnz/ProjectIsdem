@@ -28,6 +28,22 @@
     max-height: 90px;
 }
 
+/* ESTILO PARA DROPDOWN MENU DE MODALIDAD */
+.navbar-nav .dropdown-menu {
+    background-color: #8b2a31; /* Cambia el color de fondo del desplegable */
+}
+
+
+.dropdown-item {
+    color: #FFFF !important; /* Cambia el color del texto de las opciones del desplegable */
+}
+
+
+.dropdown-item:hover {
+    text-shadow: 4px 4px 8px #8b2a31; /* Cambia la sombra de texto durante el hover */
+}
+
+
 /* ESTILO FOOTER */
 footer {
     text-align: left;
