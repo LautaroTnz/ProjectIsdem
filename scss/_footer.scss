@@ -1,0 +1,18 @@
+footer {
+    text-align: left;
+    background-color: #8C2426;
+    color: #F5F5F5FA;
+
+    i.fab {
+        font-size: 20px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #A67F44;
+        }
+    }
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
+}
